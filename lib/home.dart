@@ -41,25 +41,25 @@ class _homeState extends State<home> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                SizedBox(height: 30),
+                SizedBox(height: 10),
                 Container(
                     padding: EdgeInsets.all(20),
                     alignment: Alignment.centerLeft,
                     child: Text(userQuestion,
                         style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.normal))),
+                            fontSize: 20, fontWeight: FontWeight.normal))),
                 Container(
                   padding: EdgeInsets.all(20),
                   alignment: Alignment.centerRight,
                   child: Text(userAnswer,
                       style:
-                          TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
                 )
               ],
             ),
           )),
           Expanded(
-              flex: 2,
+              flex: 3,
               child: Container(
                   child: GridView.builder(
                       itemCount: buttons.length,
